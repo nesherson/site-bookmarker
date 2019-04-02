@@ -1,85 +1,136 @@
-/* Space out content a bit */
+html {
+  margin: 0;
+}
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: Helvetica;
+  min-width: 350px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px; /* Make the masthead heading the same height as the navigation */
+
+.bookmarker-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.bookmarker-main {
+  grid-column: 2 / 3; 
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+.bookmarker-main h1 {
+  padding: 20px 20px 20px 0;
+  color: hsl(233, 0%, 20%);
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+  margin-bottom: 30px;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .header {
-    margin-bottom: 30px;
-  }
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
-.well {
- 
-  border: 2px solid grey;
+.bookmarker-main-input {
+  background-color: hsl(225, 14.3%, 94.5%);
+  padding: 50px 30px;
   border-radius: 4px;
-  margin: 10px;
-  padding: 20px 10px;
-
 }
+
+.bookmarker-main-input h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  color: hsl(233, 0%, 20%);
+  font-size: 1.7rem;
+  
+}
+
+.bookmark-form label {
+  text-align: center;
+  padding: 6px;
+  font-size: 1rem;
+  color: hsl(233, 0%, 20%);
+}
+
+.bookmark-form input {
+  border: 1px solid hsl(0, 3.5%, 72%);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.bookmark-form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: hsl(233, 48%, 61%);
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 22px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+}
+
+.bookmark {
+  border-radius: 5px;
+  border: 1px solid hsl(0, 3.5%, 72%);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.bookmark h3 {
+  padding: 8px;
+  font-size: 1rem;
+  color: hsl(233, 0%, 20%);
+}
+
+.visit-btn {
+  background-color: hsl(0, 3.5%, 72%);
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  background-color: rgb(216, 4, 4);
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+@media (max-width: 770px) {
+
+  .bookmarker-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 0 20px;
+  }
+
+  .bookmarker-main {
+    grid-column: span 1;
+
+  }
+}
+
+@media (max-width: 500px) {
+
+  .bookmarker-main-input h2 {
+    text-align: center;    
+
+  }
+}
+
+
+
+
+
