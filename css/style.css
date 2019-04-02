@@ -13,29 +13,29 @@ a {
 }
 
 
-.bookmarker-grid {
+.container-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.bookmarker-main {
+.container-main {
   grid-column: 2 / 3; 
 }
 
-.bookmarker-main h1 {
+.container-main h1 {
   padding: 20px 20px 20px 0;
   color: hsl(233, 0%, 20%);
   border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
   margin-bottom: 30px;
 }
 
-.bookmarker-main-input {
+.main-form-wrapper {
   background-color: hsl(225, 14.3%, 94.5%);
   padding: 50px 30px;
   border-radius: 4px;
 }
 
-.bookmarker-main-input h2 {
+.main-form-wrapper h2 {
   display: flex;
   justify-content: center;
   font-weight: normal;
@@ -44,26 +44,26 @@ a {
   
 }
 
-.bookmark-form label {
+.container-form label {
   text-align: center;
   padding: 6px;
   font-size: 1rem;
   color: hsl(233, 0%, 20%);
 }
 
-.bookmark-form input {
+.container-form input {
   border: 1px solid hsl(0, 3.5%, 72%);
   padding: 8px;
   border-radius: 5px;
 }
 
-.bookmark-form-input {
+.form-input-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-.submit {
+.submit-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -79,11 +79,11 @@ a {
 }
 
 .bookmark {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid hsl(0, 3.5%, 72%);
   margin: 10px;
-  display: flex;
-  align-items: center;
   padding: 10px 10px;
 }
 
@@ -99,7 +99,6 @@ a {
   padding: 8px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 1rem;
 }
 
 .delete-btn {
@@ -110,21 +109,19 @@ a {
 }
 
 @media (max-width: 770px) {
-
-  .bookmarker-grid {
+  .container-grid {
     grid-template-columns: 1fr;
     padding: 0 20px 0 20px;
   }
 
-  .bookmarker-main {
+  .container-main {
     grid-column: span 1;
 
   }
 }
 
 @media (max-width: 500px) {
-
-  .bookmarker-main-input h2 {
+  .main-form-wrapper h2 {
     text-align: center;    
 
   }

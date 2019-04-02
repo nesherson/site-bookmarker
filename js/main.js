@@ -21,7 +21,13 @@ function saveBookmark() {
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     } else {
 
+
         var bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+        if (!isAdded(bookmark, bookmarks)) {
+            alert("Website is already added!");
+            return false;
+        }
+
         bookmarks.push(bookmark);
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     }
@@ -82,6 +88,16 @@ function validateForm(siteName, siteUrl) {
     if (!siteUrl.match(regex)) {
         alert("Please use valid URL");
         return false;
+    }
+    return true;
+}
+
+function isAdded(bookmark, bookmarks) {
+
+    for (var i = 0; i < bookmarks.length; i++) {
+        if (bookmark.name === bookmarks[i].name) {
+            return false;
+        }
     }
     return true;
 }

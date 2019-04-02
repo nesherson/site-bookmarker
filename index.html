@@ -10,26 +10,26 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body onload="fetchBookmarks()">
-    <div class="bookmarker-grid">
-        <main class="bookmarker-main">
+    <div class="container-grid">
+        <main class="container-main">
             <h1>Bookmarker</h1>
-            <div class="bookmarker-main-input">
+            <div class="main-form-wrapper">
                 <h2>Bookmark your favorite sites</h2>
-                <form id="js-bookmark-form" class="bookmark-form">
-                    <div class="bookmark-form-input">
+                <form id="js-bookmark-form" class="container-form">
+                    <div class="form-input-wrapper">
                         <label for="site-name">Site name</label>
                         <input type="text" id="site-name" placeholder="Website name">
                     </div>
-                    <div class="bookmark-form-input">
+                    <div class="form-input-wrapper">
                         <label for="site-url">Site URL</label>
                         <input type="text" id="site-url" placeholder="Website URL">
                     </div>
-                    <div class="submit">
+                    <div class="submit-wrapper">
                         <button class="submit-btn" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
-            <div id="js-bookmarks-results" class="main-bookmarks">
+            <div id="js-bookmarks-results" class="container-bookmarks">
             </div>
         </main>
     </div>
