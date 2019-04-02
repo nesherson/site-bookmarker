@@ -95,7 +95,7 @@ function validateForm(siteName, siteUrl) {
 function isAdded(bookmark, bookmarks) {
 
     for (var i = 0; i < bookmarks.length; i++) {
-        if (bookmark.name === bookmarks[i].name) {
+        if (bookmark.url === bookmarks[i].url) {
             return false;
         }
     }
