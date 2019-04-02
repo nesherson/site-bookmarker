@@ -2,7 +2,8 @@
 
 This is a site bookmarker I made while following "Traversy Media" tutorial
 
-![Screenshot](https://github.com/nesherson/Basic-Responsive-Blog/blob/master/images/Basic-Responsive-Blog-Image.png)
+![Screenshot](https://github.com/nesherson/site-bookmarker/blob/master/Images/Bookmarker-full-window.png)
+![Screenshot](https://github.com/nesherson/site-bookmarker/blob/master/Images/Bookmarker-responsive-mobile.png)
 
 ## Getting started
 
