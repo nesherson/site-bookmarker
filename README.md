@@ -1,6 +1,6 @@
 # Website bookmarker
 
-This is a site bookmarker I made while following "Traversy Media" tutorial
+This is a site bookmarker I made while following "Traversy Media" tutorial.Difference is that I changed layout design from bootstrap to grid and flexbox.
 
 ## Full window
 
