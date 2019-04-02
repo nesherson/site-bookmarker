@@ -2,11 +2,11 @@
 
 This is a site bookmarker I made while following "Traversy Media" tutorial
 
-##Full window
+## Full window
 
 ![Screenshot](https://github.com/nesherson/site-bookmarker/blob/master/Images/Bookmarker-full-window.png)
 
-##Responsive-mobile
+## Responsive-mobile
 
 ![Screenshot](https://github.com/nesherson/site-bookmarker/blob/master/Images/Bookmarker-responsive-mobile.png)
 
